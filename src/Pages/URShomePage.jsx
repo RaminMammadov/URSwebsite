@@ -13,7 +13,6 @@ export default function URShomePage() {
   window.scrollTo(0,0);  
   return (
     <>
-    
       <URSheader />
       <URSserviceAndEducation />
       <URSserviceAndEducationCountries />
