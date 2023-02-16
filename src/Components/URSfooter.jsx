@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState,useEffect} from "react";
 import { FaFacebookF, FaInstagram, FaTelegram, FaTiktok, FaYoutube } from "react-icons/fa";
 import logo from "../assets/images/11.svg";
 import style from "../assets/css/URSfooter.module.css";

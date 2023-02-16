@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState,useEffect, useCallback } from 'react';
 import style from '../assets/css/URShomeHead.module.css';
 import Logo from '../assets/images/12.svg';
 import Pages from '../Routing/Pages.json';

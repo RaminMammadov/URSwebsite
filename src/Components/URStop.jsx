@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube, FaTelegram } from 'react-icons/fa';
 import style from '../assets/css/URStop.module.css';
 import { Outlet } from 'react-router-dom';
