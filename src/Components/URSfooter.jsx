@@ -64,7 +64,7 @@ function URSfooter() {
                     <span className={style.listTitle}>Hizmet & Eğitim</span>
                   </li>
                   {
-                    dataServiceAndEDucation.map(data => {
+                    dataServiceAndEDucation.map((data,index) => {
                       return (
                         <li className={style.URSfooterList} key={index}>
                           <NavLink to={`/URSserviceAndEducationDetail/:${data.title}`} className={style.listItem}>{data.title}</NavLink>
