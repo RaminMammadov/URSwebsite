@@ -32,7 +32,7 @@ function URSmentors() {
                     <div className={style.URSmentorsCard}>
                       <div className={style.URSmentorsCardInner}>
                         <div className={style.URSmentorsCardFront}>
-                          <img className={style.image} src={`${url}/uploads/${result.picture}`} alt="" />
+                          <img className={style.image} src={`https://api.ursdanismanlik.com/uploads/${result.picture}`} alt="" />
                         </div>
                         <div className={`${style.URSmentorsCardBack} ${result.class}`}>
                           <img className={style.URSmentorsImage} src={`${url}uploads/${result.picture}`} alt="" />
