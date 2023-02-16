@@ -14,7 +14,7 @@ const URSdataAbout = [
     {
         "id": 3,
         "icon": <FaLock/>,
-        "text": "We present worldclass courses with practical learning tasks that make students more."
+        "text": "We present worldclass courses with practical learning tasks that make students more confident."
     }
 ]
 
