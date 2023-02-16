@@ -1,0 +1,52 @@
+@font-face {
+  font-family: poppinsLight;
+  src: url(../font/Poppins-Light.ttf);
+}
+
+.URSerrorPage .errorPage {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-40%);
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.URSerrorPage .errorPage .errorPageAlertIcon {
+  color:#FCBA00;
+  font-size: 80px;
+}
+
+.URSerrorPage .errorPage .errorPageAlert {
+  font-size: 80px;
+  color: #383838;
+  margin: 10px 0;
+}
+
+.URSerrorPage .errorPage .errorPageTitle {
+  font-size: 40px;
+  color: #232323;
+  margin: 10px 0;
+}
+
+.URSerrorPage .errorPage .errorPageDescription {
+  margin: 10px 0 40px 0;
+  font-family: poppinsLight;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.URSerrorPage .errorPage .backToHomePage .backToHomePageBtn {
+  background-color: #FCBA00;
+  color: #fff;
+  padding: 15px;
+  transition: All 0.4s;
+  border: 1px solid #FCBA00;
+}
+
+.URSerrorPage .errorPage .backToHomePage .backToHomePageBtn:hover {
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}

@@ -1,0 +1,148 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+.URSportfolioDetail .portfolioDetail {
+    padding: 100px 0 50px 0;
+}
+
+.URSportfolioDetail .filteredPortfolioDetail {
+    margin-top: 40px;
+}
+
+
+.URSportfolioDetail .portfolioDetail .titleAndDescription .title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #383838;
+    position: relative;
+}
+
+.URSportfolioDetail .portfolioDetail .titleAndDescription .description {
+    font-size: 15px;
+    color: #000;
+    line-height: 20px;
+    margin-top: 20px;
+    font-family: poppinsLight;
+}
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples {
+    padding: 100px 0 50px 0;
+}
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples .titles {
+    text-align: center;
+}
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples .titles .titleFiftyPixel {
+    font-size: 50px;
+    font-weight: 800;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples .titles .titleFiftyPixelLight {
+    font-family: poppinsLight;
+    font-size: 50px;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    display: inline-block;
+}
+
+
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples .URSportfolioExample .example .examplePhoto {
+    overflow: hidden;
+    position: relative;
+}
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples .URSportfolioExample .example .examplePhoto .image {
+    width: 100%;
+    transition: 1s;
+}
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples .URSportfolioExample .example .examplePhoto .image:hover {
+    transform: scale(1.1);
+}
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples .row {
+    margin: 0 !important;
+}
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples .URSportfolioExample .example .brandAndService .brandAndServiceName {
+    text-decoration: none;
+    color: #262A37;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples .URSportfolioExample .example .brandAndService .brandAndServiceName .brandName {
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.URSportfolioDetail .portfolioDetail .otherPortfolioExamples .URSportfolioExample .example .brandAndService .brandAndServiceName .serviceName {
+    font-family: poppinsLight;
+    font-size: 14px;
+    color: #fff;
+    background-color: #FCBA00;
+    padding: 5px 10px;
+}
+
+.URSportfolioDetail .portfolioDetail .PortfolioDetailImg img {
+    width: 100%;
+}
+
+.URSportfolioDetail .portfolioDetail .titleAndDescription .titleServiceName {
+    font-size: 17px;
+    color: #fff;
+    background-color: #FCBA00;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:768px) {
+    .URSportfolioDetail .portfolioDetail {
+        padding: 50px 0;
+    }
+
+    .URSportfolioDetail .portfolioDetail .titleAndDescription .title {
+        font-size: 30px;
+    }
+
+    .URSportfolioDetail .portfolioDetail .otherPortfolioExamples .titles .titleFiftyPixel {
+        font-size: 30px;
+        line-height: 30px;
+        display: block;
+        margin: 10px 0;
+    }
+
+
+    .URSportfolioDetail .portfolioDetail .otherPortfolioExamples .titles .titleFiftyPixelLight {
+        font-size: 30px;
+        line-height: 30px;
+        display: block;
+    }
+
+    .URSportfolioDetail .portfolioDetail .otherPortfolioExamples .URSportfolioExample .example .brandAndService .brandAndServiceName .brandName {
+        font-size: 16px;
+    }
+
+    .URSportfolioDetail .portfolioDetail .otherPortfolioExamples .URSportfolioExample .example .brandAndService .brandAndServiceName .serviceName {
+        font-size: 13px;
+    }
+}

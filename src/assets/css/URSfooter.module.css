@@ -1,0 +1,133 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+.URSfooter {
+    padding: 60px 0;
+    width: 100%;
+}
+.URSfooter .URSfooterRowDirection {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.URSfooter .URSfooterNavigation .URSfooterList {
+    padding: 5px 0;
+    list-style: none;
+}
+.URSfooter .URSfooterNavigation .URSfooterList .listTitle {
+    font-size: 14px;
+}
+.URSfooter .URSfooterNavigation .URSfooterList .listItem {
+    font-size: 14px;
+    font-family: poppinsLight;
+    color: #000;
+}
+
+.URSfooter .URSfooterRowDirectionCenter {
+    background-color: #f4f5f8;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.URSfooter .URSfooterRowDirectionCenter .URSfooterAddress {
+    display: flex;
+    padding: 30px 0;
+    justify-content: center;
+}
+.URSfooter .URSfooterRowDirectionCenter .URSfooterAddress .text {
+    font-size: 14px;
+}
+
+.URSfooterRowDirectionBetween {
+    padding-top: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.URSfooterRowDirectionBetween .URSfooterCopyright {
+    font-weight: 300;
+    font-size: 14px;
+}   
+.URSfooterRowDirectionBetween .URSfooterColDirection {
+    display: flex;
+    justify-content: center;
+} 
+.URSfooterRowDirectionBetween .URSfooterColDirection .URSfooterLogo .URSfooterLogoImg {
+    width: 200px;
+}
+.URSfooterRowDirectionBetween .URSfooterColDirection .URSfooterSocialLink .socialIcon {
+    margin-left: 35px;
+    font-size: 18px;
+    transition: all .3s ease-out;
+    display: inline-block;
+    color: #000;
+}
+.URSfooterRowDirectionBetween .URSfooterColDirection .URSfooterSocialLink .socialIcon:hover {
+    transform: translate(0,10px);
+}
+
+@media screen and ( max-width: 768px ) {
+    .URSfooter {
+        padding: 30px 0;
+    }
+    .URSfooter .URSfooterRowDirection {
+        padding-bottom: 30px;
+    }    
+    .URSfooter .URSfooterRowDirection .URSfooterNavigation {
+        padding: 10px;
+    } 
+ 
+    
+    .URSfooter .URSfooterRowDirectionBetween {
+        padding-top: 30px;
+        align-items: center;
+        flex-direction: column; 
+        padding: 30px 0px;
+    }    
+    .URSfooterRowDirectionBetween .URSfooterCopyright  {
+        text-align: center;
+    }
+
+    .URSfooterRowDirectionBetween .URSfooterColDirection .URSfooterLogo {
+        padding: 10px 0;
+    }    
+    .URSfooterRowDirectionBetween .URSfooterColDirection .URSfooterLogo .URSfooterLogoImg {
+        margin: 30px 0;
+    }    
+
+    .URSfooter .URSfooterRowDirectionCenter .URSfooterAddress .text {
+        line-height: 20px;
+        
+    }
+    .URSfooter .URSfooterRowDirection {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .URSfooter .URSfooterNavigation .URSfooterList .listTitle,
+    .URSfooter .URSfooterNavigation .URSfooterList .listItem {
+        font-size: 18px;
+    }  
+    .URSfooter .URSfooterNavigation .URSfooterList {
+        padding: 10px 0;
+    }
+    .URSfooterRowDirectionBetween .URSfooterColDirection .URSfooterSocialLink .socialIcon{
+        margin: 0 10px;
+    }    
+
+}    
+
+@media screen and ( max-width: 992px) {
+    .URSfooterRowDirectionBetween .URSfooterColDirection .URSfooterSocialLink .socialIcon{
+        margin-left: 21px;
+    }    
+
+    .URSfooter .URSfooterRowDirectionCenter .URSfooterAddress {
+       text-align: center; 
+    }   
+
+}    
+
+

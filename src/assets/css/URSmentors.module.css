@@ -1,0 +1,174 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+.URSmentors {
+    padding: 100px 0;
+}
+.URSmentors .URSmentorsTitle {
+    text-align: center;
+}
+.URSmentors .URSmentorsTitle .URSmentorsTitleFiftyPixel {
+    font-size: 50px;
+    font-weight: 800;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+}
+.URSmentors .URSmentorsTitle .URSmentorsTitleFiftyPixelLight {
+    font-family: poppinsLight;
+    font-size: 50px;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    display: inline-block;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+}
+
+.URSmentors .URSmentorsColDirection{
+    display: flex;
+    justify-content: center;
+}
+.URSmentors .URSmentorsColDirection .URSmentorsCard {
+    background-color: transparent;
+    width: 100%;
+    perspective: 1000px;
+}
+.URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.URSmentors .URSmentorsColDirection .URSmentorsCard:hover .URSmentorsCardInner {
+    transform: rotateX(180deg);
+    cursor: pointer;
+}
+.URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardFront,
+.URSmentorsCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 0;
+}
+.URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardFront {
+    background-color: #bbb;
+    overflow: hidden;
+    color: black;
+}
+.URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardFront .image{
+    width: 100%;
+    height: 100%;
+}
+
+.URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack {
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateX(180deg);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255 205 5 / 80%);
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    z-index: 99999;
+    color: #fff;
+}
+.URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard .name {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard .profession {
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard .URSmentorsSocialIcon .icon {
+    margin-right: 12px;
+}
+
+.URSmentorsContent .URSmentorsItem img{
+    width: 216px;
+    height: 216px;
+}
+
+@media screen and (max-width: 768px) {
+    .URSmentors {
+        padding: 50px 0 26px 0;
+    }
+    .URSmentors .URSmentorsTitle .URSmentorsTitleFiftyPixel {
+        font-size: 30px;
+        line-height: 30px;
+        display: block;
+        margin: 0;
+    }
+    .URSmentors .URSmentorsTitle .URSmentorsTitleFiftyPixelLight {
+        font-size: 30px;
+        line-height: 30px;
+        display: block;
+        margin-bottom: 40px;
+        margin-top: 5px;
+    }
+    .URSmentors .URSmentorsColDirection{
+        padding: 0 !important;
+    }
+    .URSmentors .URSmentorsColDirection .URSmentorsCard {
+        width: 100%;
+    }
+    .URSmentorsContent {
+        padding: 0 12px;
+    }
+    .URSmentorsContent .URSmentorsItem {
+        margin-bottom: 24px;
+    }
+
+   
+
+    .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner {
+        transform: rotateX(180deg);
+
+    }
+    .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard {
+        background-color: transparent !important;
+    }
+    .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard .name {
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
+    }
+    .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard .profession {
+        display: none;;
+    }
+    .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard {
+        top: 68%;
+    }
+    .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard {
+        padding: 12px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .URSmentorsCard {
+        width: 100%;
+    }
+    .URSmentorsContent .URSmentorsItem {
+        margin-bottom: 24px;
+    }
+}

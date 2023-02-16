@@ -1,0 +1,170 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+.URSserviceAndEducationDetail .serviceDetail {
+    padding: 100px 0 0 0;
+}
+
+.URSserviceAndEducationDetail .serviceDetail .ServiceTexts .get:hover {
+    background-color: #764af1;
+    display: inline-block;
+}
+
+
+.URSserviceAndEducationDetail .serviceDetail .ServiceTexts .title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #383838;
+    position: relative;
+}
+
+.URSserviceAndEducationDetail .serviceDetail .ServiceTexts .information {
+    font-size: 15px;
+    color: #000;
+    line-height: 20px;
+    margin-top: 20px;
+    font-family: poppinsLight;
+}
+
+.URSserviceAndEducationDetail .serviceDetailImg img {
+    width: 100%;
+}
+
+.URSserviceAndEducationDetail .otherServiceExamples {
+    padding: 100px 0;
+}
+
+.URSserviceAndEducationDetail .otherServiceExamples .otherServiceAndEducation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.URSserviceAndEducationDetail .otherServiceExamples .otherServiceAndEducation div { 
+    width: 32%;
+}
+
+.URSserviceAndEducationDetail .otherServiceExamples .titles {
+    text-align: center;
+}
+
+.URSserviceAndEducationDetail .otherServiceExamples .titles .titleFiftyPixel {
+    font-size: 50px;
+    font-weight: 800;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.URSserviceAndEducationDetail .otherServiceExamples .titles .titleFiftyPixelLight {
+    font-family: poppinsLight;
+    font-size: 50px;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.filteredPortfolioDetail {
+    margin-top: 40px;
+}
+
+.URSserviceAndEducationDetail .serviceDetail .otherServiceExamples .serviceAndEducation {
+    text-align: center;
+}
+
+
+.URSserviceAndEducationDetail .serviceDetail .otherServiceExamples .serviceAndEducation .title {
+    color: #232323;
+    font-size: 17px;
+    padding: 20px 0;
+    border: 1px solid #000;
+    transition: All 0.4s;
+}
+
+.URSserviceAndEducationDetail .serviceDetail .otherServiceExamples .serviceAndEducation .title:hover {
+    background-color: #FCBA00;
+    border: 1px solid #FCBA00;
+    color: #fff;
+}
+
+
+.URSserviceAndEducationDetail .serviceDetail .otherServiceExamples .serviceAndEducation .information {
+    font-size: 12px;
+    position: relative;
+    top: -20px;
+    display: block;
+    line-height: 15px;
+    color: #000;
+    font-size: 12px;
+    font-family: poppinsLight;
+}
+
+@media only screen and (max-width:768px) {
+    .URSserviceAndEducationDetail .serviceDetail {
+        padding: 50px 0 30px 0;
+    }
+
+    .URSserviceAndEducationDetail .serviceDetailImg img {
+        display: none;
+    }
+
+    .URSserviceAndEducationDetail .otherServiceExamples .titles .titleFiftyPixelLight {
+        font-size: 30px;
+        line-height: 30px;
+        display: block;
+        margin-bottom: 0px;
+    }
+
+    .URSserviceAndEducationDetail .otherServiceExamples .titles .titleFiftyPixel {
+        font-size: 30px;
+        line-height: 30px;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .URSserviceAndEducationDetail .otherServiceExamples .titles {
+        margin-bottom: 40px;
+    }
+
+
+    .URSserviceAndEducationDetail .serviceDetail .otherServiceExamples .serviceAndEducation {
+        margin-bottom: 20px;
+    }
+
+    .URSserviceAndEducationDetail .serviceDetail .ServiceTexts .title {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+
+    .URSserviceAndEducationDetail .otherServiceExamples {
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .URSserviceAndEducationDetail .serviceDetail .ServiceTexts {
+        padding-left: 12px;
+    }
+
+    .URSserviceAndEducationDetail .otherServiceExamples .otherServiceAndEducation {
+        flex-direction: column;
+    }
+    
+    .URSserviceAndEducationDetail .otherServiceExamples .otherServiceAndEducation div { 
+        width: 100%;
+    }
+    .URSserviceAndEducationDetail .serviceDetail .ServiceTexts .information {
+        border: 1px solid #000; 
+        background-color: #f3f3f3;
+        padding: 12px;
+    }
+    
+}

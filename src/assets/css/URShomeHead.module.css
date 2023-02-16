@@ -1,0 +1,212 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+.URShomeHead .URSheader {
+    position: relative;
+    align-items: center;
+    font-size: 14px;
+    z-index: 9999;
+}
+
+.URShomeHead .URSheader .URSmainBanner {
+    padding: 0;
+    position: relative;
+}
+.URShomeHead .URSheader .URSmainBanner .URSmainBannerImg {
+    height: 100%;
+    width: 100%;
+}
+.URShomeHead .URSheader .URSmainBanner .URSmainMobileBannerImg {
+    display: none;
+}
+
+.URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans {
+    position: absolute;
+    top: 45%;
+    color: #fff;
+    padding-left: 55px;
+}
+.URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans .firstSlogan {
+    font-size: 30px;
+    text-transform: inherit;
+    font-family: poppinsLight;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 22px;
+}
+.URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans .firstSlogan::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 0%;
+    height: 1px;
+    border-radius: 10px;
+}
+.URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans .secondSlogan {
+    font-size: 60px ;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 70px;
+    letter-spacing: 2px;
+}
+
+.URShomeHead .URSheader .URSheaderNavigation .navigation .logo #logo {
+    height: 80px;
+    margin-left: 40px;
+}
+
+.URShomeHead .URSheader .URSheaderNavigation .navigation {
+    position: absolute;
+    top: 4%;
+    align-items: center;
+    display: flex;
+}
+
+.URShomeHead .URSheader .URSheaderNavigation .navigation .navigationList .navigationListItem {
+    display: inline-block;
+} 
+.URShomeHead .URSheader .URSheaderNavigation .navigation .navigationList .navigationListItem .link {
+    font-size: 17px;
+    position: relative;
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    margin: 0px 12px;
+}
+.URShomeHead .URSheader .URSheaderNavigation .navigation .navigationList .navigationListItem .link:hover {
+    color: #fff;
+}
+.URShomeHead .URSheader .URSheaderNavigation .navigation .navigationList .navigationListItem .link::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #FCBA00;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: All 0.4s;
+}
+.URShomeHead .URSheader .URSheaderNavigation .navigation .navigationList .navigationListItem .link:hover::before {
+    width: 100%;
+}
+.URShomeHead .URSheader .URSheaderNavigation .navigation .navigationList .navigationListItem .link:hover {
+    color:#FCBA00;
+}
+
+.URShomeHead .URSheader .URSheaderNavigation .navigation .navigationList {
+    text-align: center;  
+    position: relative;
+}
+.URShomeHead .URSheader .URSheaderNavigation .navigation .navigationListItem {position: relative;}
+.URShomeHead .URSheader .URSheaderNavigation .navigation .servicesDropdown {
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    width: 120%;
+    margin-left: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.URShomeHead .URSheader .URSheaderNavigation .navigation .servicesDropdown .dropDownItem .dropDownLink {
+    color: #000;
+    padding: 20px;
+    font-family: poppinsLight;
+    font-size: 15px;
+    text-align-last: left;
+    display: block;
+    font-weight: 800;
+}
+
+.URShomeHead .URSheader .URSheaderNavigation .navigation .servicesDropdown .dropDownItem .dropDownLink:hover {
+    background-color: #f3f3f3;
+}
+
+/*Media Query*/
+@media only screen and (max-width: 992px) {
+    .URShomeHead .URSheader .URSheaderNavigation .navigation .navigationList .navigationListItem .link {
+        margin: 0px 8px;
+    }
+    .URShomeHead .URSheader .URSheaderNavigation .navigation .servicesDropdown {
+        margin-left: 8px;
+    }
+
+    .URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans {
+        top: 30%;
+        padding-left: 20px;
+    }
+
+    .URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans .firstSlogan {
+        font-size: 30px;
+    }
+    .URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans .secondSlogan {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .URShomeHead .URSheader .URSmainBanner .URSmainBannerImg {
+       display: none;
+    }
+    .URShomeHead .URSheader .URSmainBanner .URSmainMobileBannerImg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin:  0px 0 0 -12px;
+        width: calc(100% + 24px);
+    }
+    
+    .URShomeHead .URSheader .URSheaderNavigation .navigation {
+        display: none;
+    }
+
+
+    .URShomeHead .URSheader .URSheaderNavigation .navigation .navigationList {
+        display: none;
+    }
+
+    .URShomeHead .URSheader .URSmainMobileBannerImg {
+        margin-top: 120px !important;
+    }
+
+    .URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans {
+        padding-left: 20px;
+    }
+
+    .URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans .firstSlogan {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans .secondSlogan {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .URShomeHead .URSheader .URSmainBanner {
+        margin-top: 80px !important;
+    }
+
+    .URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans {
+        top: 20%;
+        padding-left: 20px;
+    }
+
+    .URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans .firstSlogan {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .URShomeHead .URSheader .URSmainBanner .URSmainBannerSLogans .secondSlogan {
+        font-size: 15px;
+        line-height: 30px;
+    }
+}

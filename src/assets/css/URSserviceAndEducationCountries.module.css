@@ -1,0 +1,103 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font//Poppins-Light.ttf);
+}
+
+.URSserviceAndEducationCountries {
+    background-color: #f3f3f3;
+    padding: 100px 0;
+}
+
+.URSserviceAndEducationCountries .URSheaderServiceAndEducationCountries {
+    display: flex;
+    justify-content: center;
+}
+
+.URSserviceAndEducationCountries .URSheaderServiceAndEducationCountries .titles .titleFiftyPixel {
+    font-size: 50px;
+    font-weight: 800;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+}
+
+.URSserviceAndEducationCountries .URSheaderServiceAndEducationCountries .titles .titleFiftyPixelLight {
+    font-family: poppinsLight;
+    font-size: 50px;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    display: inline-block;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+}
+
+.URSserviceAndEducationCountries .URScountryServiceAndEducationCountries {
+    background-color: #fff;
+    border: 1px solid #f3f3f3;
+    transition: all 1s;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.URSserviceAndEducationCountries .URScountryServiceAndEducationCountries .countryName {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.URSserviceAndEducationCountries .URScountryServiceAndEducationCountries .URScountryServiceAndEducationCountriesPhoto {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 992px) {
+    .URSserviceAndEducationCountries .URScountryServiceAndEducationCountries {
+        margin: 15px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .URSserviceAndEducationCountries {
+        padding: 50px 0 26px 0;
+    }
+
+    .URSserviceAndEducationCountries .URSheaderServiceAndEducationCountries .titles .titleFiftyPixel {
+        font-size: 30px;
+        line-height: 30px;
+        display: block;
+        text-align: center;
+        margin-right: 0px;
+        margin-bottom: 0;
+    }
+
+    .URSserviceAndEducationCountries .URSheaderServiceAndEducationCountries .titles .titleFiftyPixelLight {
+        font-size: 30px;
+        line-height: 30px;
+        display: block;
+        margin-bottom: 40px;
+        margin-top: 5px;
+    }
+
+    .URSserviceAndEducationCountries .URScountryServiceAndEducationCountries {
+        text-align: center;
+        padding: 20px 10px;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .URSserviceAndEducationCountries .URSserviceAndEducationCountriesContent {
+        padding: 0 12px !important;
+    }
+
+    .URSserviceAndEducationCountries .URSheaderServiceAndEducationCountries .title {
+        font-size: 43px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,134 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+.URSabout {
+    padding: 100px 0 0px 0;
+}
+.URSabout .leftSide .leftSideInformation {
+    background-color: #f3f3f3;
+    padding: 24px;
+    margin-top: 20px;
+}
+.URSabout .leftSide .title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #383838;
+    position: relative;
+}
+.URSabout .leftSide .shortDescription {
+    font-size: 15px;
+    color: #000;
+    line-height: 20px;
+    font-family: poppinsLight;
+    margin-top: 20px;
+}
+
+.URSabout .leftSide .icons {
+    margin-top: 20px;
+}
+.URSabout .leftSide .icons .icon {
+    padding: 0 15px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: All 0.4s;
+    background-color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.URSabout .leftSide .icons .icon:hover {
+    transform: rotateY(180deg);
+}
+.URSabout .leftSide .icons .list {
+    padding: 0;
+}
+
+.URSabout .leftSide .icons .list .listItem {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.URSabout .leftSide .descriptions .description {
+    font-size: 15px;
+    color: #000;
+    line-height: 20px;
+    font-family: poppinsLight;
+    margin:0 !important;
+}
+
+.URSabout .leftSide .goToPortfolioButton {
+    margin-top: 30px;
+}
+
+.URSabout .leftSide .goToPortfolioButton .goToPortfolioButtonLink {
+    background-color: #FCBA00;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 18px 0;
+    border: none;
+    transition: All 0.4s;
+    text-align: center;
+}
+.URSabout .leftSide .goToPortfolioButton .goToPortfolioButtonLink:hover {
+    background-color: #ffff;
+    color: #000;
+    display: inline-block;
+    outline: 1px solid #000;
+}
+
+.URSabout .rightSide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.URSabout .rightSide::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/image-frame.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.URSabout .rightSide .rightSideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+
+
+@media screen and ( max-width: 768px ) {
+    .URSabout{
+        padding: 50px 0 0px 0; 
+    } 
+
+    .URSabout .leftSide .leftSideInformation { 
+        border: 1px solid #000; 
+        background-color: #f3f3f3;
+        padding: 12px;
+    }
+
+    .URSabout .leftSide .title {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .URSabout .rightSide {
+        display: none !important; 
+    }
+    
+}

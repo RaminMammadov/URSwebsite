@@ -1,0 +1,130 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+.frequentlyAskedQuestions {
+    padding: 100px 0 !important;
+}
+
+.frequentlyAskedQuestions .titles .titleFiftyPixel {
+    font-size: 50px;
+    font-weight: 800;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+}
+
+.frequentlyAskedQuestions .titles .titleFortyPixel {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-top: -20px;
+    letter-spacing: -.1px;
+    color: #232323;
+    font-family: poppinsLight;
+    text-transform: lowercase;
+}
+
+
+.frequentlyAskedQuestions .shortDescription {
+    margin: 40px 0 50px 0;
+    font-size: 15px;
+    color: #000;
+    line-height: 20px;
+    font-family: poppinsLight;
+}
+
+
+.frequentlyAskedQuestions .frequentlyAskedQuestionsAccordion .questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.frequentlyAskedQuestions .frequentlyAskedQuestionsAccordion .questions,
+.frequentlyAskedQuestions .frequentlyAskedQuestionsAccordion .answers {
+    border: 1px solid #f3f3f3;
+    padding: 20px;
+}
+.frequentlyAskedQuestions .frequentlyAskedQuestionsAccordion .questions .question,
+.frequentlyAskedQuestions .frequentlyAskedQuestionsAccordion .answers .answer {
+    line-height: 20px;
+}
+.frequentlyAskedQuestions .frequentlyAskedQuestionsAccordion .questions .questionArrowIcon {
+    margin-left: 20px;
+}
+
+.frequentlyAskedQuestions .frequentlyAskedQuestionsAccordion .answers {
+    border-top: 0;
+    padding: 20px;
+    background-color: #f3f3f3;
+    font-family: poppinsLight;
+    font-size: 15px;
+}
+
+.frequentlyAskedQuestions .seeAllQuestions .seeAllQuestionsBtn {
+    border: none;
+    background-color: #FCBA00;
+    padding: 20px 0px;
+    color: #fff;
+    transition: All 0.4s;
+    border: 1px solid #FCBA00;
+    display: block;
+    width: 50%;
+    text-align: center;
+    border: 1px solid #FCBA00;
+}
+
+.frequentlyAskedQuestions .seeAllQuestions .seeAllQuestionsBtn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.frequentlyAskedQuestions .seeAllQuestions .seeAllQuestionsBtnMobile {
+    border: none;
+    display: none;
+    background-color: #FCBA00;
+    padding: 20px 0px;
+    color: #fff;
+    transition: All 0.4s;
+    border: 1px solid #FCBA00;
+    width: 50%;
+    text-align: center;
+    border: 1px solid #FCBA00;
+}
+
+@media only screen and (max-width:768px) {
+    .frequentlyAskedQuestions {
+        padding: 50px 0 !important;
+    }
+
+    .frequentlyAskedQuestions .titles .titleFiftyPixel {
+        font-size: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .frequentlyAskedQuestions .titles .titleFortyPixel {
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: -10px;
+        text-align: center;
+    }
+    .frequentlyAskedQuestions .shortDescription {
+        margin: 15px 0 40px 0; 
+        font-size: 15px;
+        color: #000;
+        text-align: center;
+    }
+    .frequentlyAskedQuestions .seeAllQuestions .seeAllQuestionsBtn {
+        display: none;
+    }
+    .frequentlyAskedQuestions .seeAllQuestions .seeAllQuestionsBtnMobile {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+}

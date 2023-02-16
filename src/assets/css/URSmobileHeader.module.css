@@ -1,0 +1,102 @@
+.URSmobileHeader {
+    position: fixed;
+    top: 0%;
+    z-index: 99999;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.URSmobileHeader .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.URSmobileHeader .header .logo {
+    width: 40%;
+}
+.URSmobileHeader .header .logo #logo {
+    width: 100%;
+}
+
+.URSmobileHeader .header .navigation {
+    text-align: right;
+    width: 60%;
+}
+
+.URSmobileHeader .header .navigation  * {
+    margin: 0 15px;
+    color: #000;
+    font-size: 30px;
+}
+.URSmobileHeader .header .navigation *:last-child { 
+    margin-right: 0px;
+}
+.URSmobileHeader .header .navigation .bars {
+    cursor: pointer;
+}
+
+.URSmobileHeader .mobileMenu .mobileMenuList {
+    padding: 20px 0 600px 0;
+}
+.URSmobileHeader .mobileMenu .mobileMenuList .mobileMenuListItem .link {
+    color: #000;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    position: relative;
+}
+.URSmobileHeader .mobileMenu .mobileMenuList .mobileMenuListItem:last-child .link {
+    border:none;
+}
+.URSmobileHeader .mobileMenu .mobileMenuList .mobileMenuListItem:nth-child(2):hover .servicesDropdown {
+    display: flex;
+}
+.URSmobileHeader .mobileMenu .mobileMenuList .mobileMenuListItem:nth-child(2) .link::after {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform:translate(0%,-50%) rotate(45deg);
+    -webkit-transform:translate(-0%,-50%) rotate(45deg);
+
+}
+
+
+.URSmobileHeader .mobileMenu .servicesDropdown {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0px;
+}
+.URSmobileHeader .mobileMenu .servicesDropdown .dropDownItem .dropDownLink {
+    color: #000;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    font-family: poppinsLight;
+}
+.URSmobileHeader .mobileMenu .servicesDropdown .dropDownItem .dropDownLink:hover {
+    background-color: #f3f3f3;
+}
+.URSmobileHeader .mobileMenu .servicesDropdown .dropDownItem .dropDownLink:hover::before {
+    width: 0;
+}
+
+@media only screen and (max-width:768px) {
+    .URSmobileHeader {
+        display: block;
+    }
+}

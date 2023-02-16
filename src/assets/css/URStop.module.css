@@ -1,0 +1,77 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+:root {
+    --main-bg-color: #232f3e;
+}
+
+.URStopHeader {
+    background-color: #fff;
+    justify-content: space-between;
+    color: #000;
+    align-items: center;
+    height: 60px;
+    display: flex;
+}
+
+.URStopHeader .location .adress {
+    font-family: poppinsLight;
+    color: #232323;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.URStopHeader .socialMediaLinks .socialMediaLink {
+    display: inline-block;
+    padding: 6px;
+    margin: 0 6px;
+    color: #232323;
+    transition: All 0.4s;
+}
+
+.URStopHeader .socialMediaLinks .socialMediaLink:hover {
+    color: #000;
+    transform: translate(0, 10px);
+}
+
+.URStopHeader .applyButton {
+    text-align: right;
+}
+
+.URStopHeader .applyButton .applyButtonLink {
+    border: none;
+    background-color: #FCBA00;
+    padding: 15px;
+    transition: All 0.4s;
+    color: #fff;
+    border: 1px solid #FCBA00;
+}
+
+.URStopHeader .applyButton .applyButtonLink:hover {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .URStopHeader {
+        height: 100px;
+        display: none !important;
+    }
+
+    .URStopHeader .socialMediaLinks {
+        text-align: left;
+    }
+
+    .URStopHeader .applyButton {
+        text-align: left;
+    }
+
+    .URStopHeader div {
+        text-align: center;
+    }
+
+}

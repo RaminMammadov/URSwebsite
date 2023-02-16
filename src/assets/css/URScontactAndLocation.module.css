@@ -1,0 +1,75 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+.URScontactAndLocation {
+    padding: 100px 0;
+}
+.URScontactAndLocation .URScontactMarginThirteenPixel {
+    margin: 15px 0;
+    height: 320px;
+}
+.URScontactAndLocation .URScontactMarginThirteenPixel .URScontactGetInTouch {
+    background-color: #f3f3f3;
+    padding: 40px;
+    height: 100%;
+}
+.URScontactAndLocation .URScontactMarginThirteenPixel .URScontactGetInTouch .URScontactGetInTouchTitle .officeName {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #383838;
+}
+
+.URScontactAndLocation .URScontactMarginThirteenPixel .URScontactGetInTouch .getInTouchBlog .getInTouchBlogAbout {
+    padding-left: 0;
+}
+.URScontactAndLocation .URScontactMarginThirteenPixel .URScontactGetInTouch .getInTouchBlog .blogList { 
+    display: flex;
+    list-style: none;
+    color: #232323;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: poppinsLight;
+}
+.URScontactAndLocation .URScontactMarginThirteenPixel .URScontactGetInTouch .getInTouchBlog .blogList .blogIcon {
+    margin-right: 20px;
+}
+.URScontactAndLocation .URScontactMarginThirteenPixel .URScontactGetInTouch .getInTouchBlog .blogList .blogData {
+    line-height: 28px;
+    font-weight: 500;
+}
+.URScontactAndLocation .URScontactMarginThirteenPixel .URScontactGetInTouch .getInTouchBlog .blogList .blogData * {
+    color: #000;
+}
+
+.URScontactAndLocation .URScontactMarginThirteenPixel .URScontactMapLocation {
+    height: 100%;
+}
+.URScontactAndLocation .URScontactMarginThirteenPixel .URScontactMapLocation .map {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .URScontactAndLocation .URScontactMarginThirteenPixel .URScontactGetInTouch {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .URScontactAndLocation {
+        padding: 50px 0;
+    }
+
+    .URScontactAndLocation .URScontactMarginThirteenPixel .URScontactGetInTouch .URScontactGetInTouchTitle .officeName {
+        font-size: 26px;
+    }
+
+    .URScontactAndLocation .URScontactMarginThirteenPixel .URScontactGetInTouch {
+        padding: 40px 20px;
+    }
+}
+

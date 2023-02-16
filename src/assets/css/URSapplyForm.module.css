@@ -1,0 +1,188 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+.URSapplyForm {
+    background-color: #f3f3f3;
+    padding: 100px 0;
+}
+
+.URSapplyForm .titles .titleFiftyPixell {
+    font-family: poppinsLight;
+    font-size: 40px;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+}
+
+.URSapplyForm .titles .titleFourtyPixell {
+    font-size: 50px;
+    font-weight: 800;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    margin-left: 50px;
+}
+
+.URSapplyForm .descriptions .shortDescription {
+    margin: 40px 0 0 50px;
+    max-width: 50%;
+    font-size: 15px;
+    color: #000;
+    line-height: 20px;
+    font-family: poppinsLight;
+}
+
+.URSapplyForm .applyForm .inputGroup {
+    display: flex;
+}
+
+.URSapplyForm .applyForm .inputGroup .nameInput,
+.URSapplyForm .applyForm .inputGroup .surNameInput,
+.URSapplyForm .applyForm .inputGroup .countryCodeInput,
+.URSapplyForm .applyForm .inputGroup .numberInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    width: 100%;
+}
+
+.URSapplyForm .applyForm .inputGroup .countryCodeInput {
+    width: 30%;
+}
+
+.URSapplyForm .applyForm .inputGroup .numberInput {
+    width: 70%;
+}
+
+.URSapplyForm .applyForm .inputGroup .nameInput,
+.URSapplyForm .applyForm .inputGroup .countryCodeInput {
+    margin-left: 0;
+}
+
+.URSapplyForm .applyForm .inputGroup .surNameInput,
+.URSapplyForm .applyForm .inputGroup .numberInput {
+    margin-right: 0;
+}
+
+.URSapplyForm .applyForm .inputGroup .numberInput input,
+.URSapplyForm .applyForm .inputGroup .countryCodeInput input,
+.URSapplyForm .applyForm .inputGroup .nameInput input,
+.URSapplyForm .applyForm .inputGroup .surNameInput input,
+.URSapplyForm .applyForm .serviceSelect .select {
+    background-color: #fff;
+    border-width: 0;
+    border-radius: 0;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 100;
+    outline: 0;
+    height: 60px;
+}
+
+.URSapplyForm .applyForm .inputGroup .nameInput input,
+.URSapplyForm .applyForm .inputGroup .surNameInput input {
+    padding: 15px 20px;
+}
+
+.URSapplyForm .applyForm .serviceSelect .select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 5px 0;
+}
+
+.URSapplyForm .applyForm .applyFormButton .applyFormButtonLink {
+    width: 100%;
+    background-color: #fcba00;
+    border: 1px solid #FCBA00;
+    padding: 20px 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #fff;
+    margin: 5px 0;
+    text-decoration: none;
+    transition: All 0.4s;
+}
+
+.URSapplyForm .applyForm .applyFormButton .applyFormButtonLink:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+
+
+input {
+    width: 100% !important;
+}
+
+@media only screen and (max-width:768px) {
+    .URSapplyForm {
+        padding: 50px 0 45px 0;
+    }
+
+    .URSapplyForm .titles .titleFiftyPixell {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .URSapplyForm .titles .titleFourtyPixell {
+        font-size: 30px;
+        line-height: 30px;
+        margin: 0;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .URSapplyForm .descriptions .shortDescription {
+        margin: 20px 0 40px 0;
+        max-width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .URSapplyForm .applyForm .inputGroup {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    .URSapplyForm .applyForm .inputGroup .nameInput,
+    .URSapplyForm .applyForm .inputGroup .surNameInput,
+    .URSapplyForm .applyForm .inputGroup .countryCodeInput,
+    .URSapplyForm .applyForm .inputGroup .numberInput {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .URSapplyForm .applyForm .serviceSelect .select {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .URSapplyForm .descriptions .shortDescriptio {
+        display: none;
+    }
+
+    .URSapplyForm .applyForm .inputGroup .numberInput input,
+    .URSapplyForm .applyForm .inputGroup .countryCodeInput input,
+    .URSapplyForm .applyForm .inputGroup .nameInput input,
+    .URSapplyForm .applyForm .inputGroup .surNameInput input,
+    .URSapplyForm .applyForm .serviceSelect .select {
+        font-size: 16px;
+        padding: 20px;
+    }
+    .URSapplyForm .applyForm .serviceSelect .select {
+        line-height: 30px !important;
+    }
+}

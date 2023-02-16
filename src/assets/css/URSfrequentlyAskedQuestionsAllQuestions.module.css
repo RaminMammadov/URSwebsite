@@ -1,0 +1,44 @@
+.allQuestions {
+    padding: 100px 0;
+}
+
+.allQuestions .allQuestionsHeader {
+    color: #383838;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.allQuestions .frequentlyAskedQuestionsAccordion .questions {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+.allQuestions .frequentlyAskedQuestionsAccordion .questions,
+.allQuestions .frequentlyAskedQuestionsAccordion .answers {
+    border: 1px solid #f3f3f3;
+    padding: 20px;
+}
+
+.allQuestions .frequentlyAskedQuestionsAccordion .answers {
+    border-top: 0;
+    padding: 20px;
+    background-color: #f3f3f3;
+    font-family: poppinsLight;
+    font-size: 15px;
+}
+
+.allQuestions .frequentlyAskedQuestionsAccordion .questions.question,
+.allQuestions .frequentlyAskedQuestionsAccordion .answers .answer {
+    line-height: 20px;
+}
+.frequentlyAskedQuestions .frequentlyAskedQuestionsAccordion .questions .questionArrowIcon {
+    margin-left: 20px;
+}
+
+.frequentlyAskedQuestions .frequentlyAskedQuestionsAccordion .questions .questionArrowIcon {
+    margin-left: 20px;
+}

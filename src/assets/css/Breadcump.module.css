@@ -1,0 +1,26 @@
+.breadcump {
+    background-color: #f3f3f3;
+    margin-top:20px;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.breadcump a {
+    color: #000;
+    margin: 0 7px;
+}
+
+.breadcump .active {
+    color: #aaa;
+}
+
+@media only screen and (max-width: 768px) {
+    .breadcump {
+        margin-top: 127px;
+        padding: 50px 0;
+    }
+
+    .breadcump a {
+        font-size: 13px;
+    }
+}

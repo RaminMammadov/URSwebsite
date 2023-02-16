@@ -1,0 +1,190 @@
+
+
+
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+:root {
+    --secColor: #4a4a4a;
+    --bgOne: rgb(236, 13, 236);
+    --bgDuo: rgb(29, 212, 29);
+    --bgTrio: rgb(247, 178, 51);
+    --bgCuatro: rgb(54, 54, 233);
+}
+
+.URSserviceAndEducation,
+.ourServices {
+    padding: 100px 0;
+}
+
+.URSserviceAndEducation .URSserviceAndEducationLeftSide .titles .titleFiftyPixel {
+    font-size: 50px;
+    font-weight: 800;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+}
+
+.URSserviceAndEducation .URSserviceAndEducationLeftSide .titles .titleFortyPixel {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-top: -20px;
+    letter-spacing: -.1px;
+    color: #232323;
+    font-family: poppinsLight;
+    text-transform: lowercase;
+}
+
+
+.URSserviceAndEducation .URSserviceAndEducationLeftSide .shortDescription {
+    font-size: 15px;
+    color: #000;
+    line-height: 20px;
+    font-family: poppinsLight;
+    margin-top: 40px;
+}
+
+.URSserviceAndEducation .URSserviceAndEducationRightSide .row {
+    margin: 0 !important;
+}
+
+.URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation {
+    padding: 20px 20px 5px 20px !important;
+    border-radius: 0px !important;
+    border: 1px solid #f3f3f3;
+    transform: scale(1);
+    z-index: 1;
+    transition: All 0.3s;
+}
+
+.URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation:hover  {
+    transform: scale(1.1);
+    z-index: 9999;
+    padding: 20px 20px 5px 20px !important;
+    background-color: var(--bgTrio);
+
+}
+
+.URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation .icon,
+.URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation .lightIcon {
+    width: 60px;
+    height: 60px;
+    cursor: pointer !important;
+    display: block;
+}
+.URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation .lightIcon {
+    display: none;
+}
+.URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation:hover .icon {
+    display: none !important;
+}
+.URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation:hover .lightIcon {
+    display: block !important;
+}
+
+.URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation:hover * {
+    color: #fff !important
+}
+
+
+.URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation .title {
+    color: #232323;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation .information {
+    font-size: 12px;
+    position: relative;
+    top: -20px;
+    display: block;
+    line-height: 15px;
+    color: #000;
+    font-size: 12px;
+    font-family: poppinsLight;
+}
+.filteredServiceData {
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:768px) {
+    .URSserviceAndEducation {
+        padding: 50px 0 0 0;
+    }
+    .URSserviceAndEducation .URSserviceAndEducationLeftSide .titles .titleFiftyPixel {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .URSserviceAndEducation .URSserviceAndEducationLeftSide .titles .titleFortyPixel {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 30px;
+        margin-top: -10px;
+        text-align: center;
+    }
+    .URSserviceAndEducation .URSserviceAndEducationLeftSide .shortDescription {
+        font-size: 15px;
+        line-height: 20px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation {
+        padding: 30px 0 !important;
+        border: 0;
+        display: flex;
+    }
+    .URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation:hover {
+        padding: 30px 0 !important;
+        background-color: var(--bgTrio);
+        border-bottom: 1px solid var(--bgTrio);
+    }
+    .URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation:not(:last-child) {
+        border-bottom: 1px solid #f3f3f3;
+        
+    }
+    .URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation a {
+        display: flex;
+        align-items: center;
+    }
+    .URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation .icon {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin: 0 50px 0 10px;
+    }
+    .URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation:hover .lightIcon {
+        margin: 0 30px 0 10px !important;
+    }
+    .URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation .lightIcon {
+        display: inline-block;
+        display: none;
+    }
+    .URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation .title {
+        font-size: 18px;
+        display: inline-block;
+        margin-top: 0;
+    }
+    .URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation .information {
+        font-size: 12px;
+        position: relative;
+        top: -20px;
+        display: block;
+        line-height: 15px;
+        color: #000;
+        font-size: 12px;
+        font-family: poppinsLight;
+        display: none;
+    }
+   
+
+    .URSserviceAndEducation .URSserviceAndEducationRightSide .serviceAndEducation:hover {
+        transform: scale(1.1) !important;
+    }
+
+}

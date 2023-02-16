@@ -1,0 +1,68 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+.URSportfolio {
+    padding: 100px 0 70px 0;
+}
+
+.URSportfolio .URSportfolioExample .example {
+    margin: 0 0 30px 0;
+}
+
+.URSportfolio .URSportfolioExample .example .examplePhoto {
+    overflow: hidden;
+    position: relative;
+}
+
+.URSportfolio .URSportfolioExample .example .examplePhoto .image {
+    width: 100%;
+    transition: 1s;
+}
+
+.URSportfolio .URSportfolioExample .example .examplePhoto .image:hover {
+    transform: scale(1.1);
+}
+
+.URSportfolio .URSportfolioExample .example .brandAndService .brandAndServiceName {
+    text-decoration: none;
+    color: #262A37;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.URSportfolio .URSportfolioExample .example .brandAndService .brandAndServiceName .brandName {
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.URSportfolio .URSportfolioExample .example .brandAndService .brandAndServiceName .serviceName {
+    font-family: poppinsLight;
+    font-size: 14px;
+    color: #fff;
+    background-color: #FCBA00;
+    padding: 5px 10px;
+}
+
+
+@media only screen and (max-width:768px) {
+    .URSportfolio {
+        padding: 50px 12px 20px 12px;
+    }
+
+    .URSportfolio .URSportfolioExample .example .brandAndService .brandAndServiceName {
+        font-size: 16px;
+    }
+
+    .URSportfolio .URSportfolioExample .example .brandAndService .brandAndServiceName .serviceName {
+        font-size: 13px;
+    }
+}

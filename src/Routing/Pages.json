@@ -1,0 +1,39 @@
+{
+    "pages": [
+        {
+            "link": "Hakkımızda",
+            "path": "/URSaboutPage"
+        },
+        {
+            "link": "Hizmet & Eğitim",
+            "path": "/URSserviceAndEducationDetail/:Online%20Arbitrage",
+            "submenu": [
+                {
+                    "link": "Online Arbitrage",
+                    "path":"/URSserviceAndEducationDetail/:Online%20Arbitrage"
+                },
+                {
+                    "link": "Retail Arbitrage",
+                    "path":"/URSserviceAndEducationDetail/:Retail%20Arbitrage"
+                },
+                {
+                    "link": "Private Label",
+                    "path": "/URSserviceAndEducationDetail/:Private%20Label"
+                    
+                },
+                {
+                    "link": "Teknik Servis",
+                    "path": "/URSserviceAndEducationDetail/:Teknik%20Destek"
+                }
+            ]
+        },
+        {
+            "link": "Portfolio",
+            "path": "/URSportfolioPage"
+        },
+        {
+            "link": "İletişim",
+            "path": "/URScontactPage"
+        }
+    ]
+}

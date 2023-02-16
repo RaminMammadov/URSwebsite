@@ -1,0 +1,25 @@
+.URSyoutubeVideosPage .seeAllYoutubeVideos {
+    padding: 100px 0 50px 0;
+}
+
+.URSyoutubeVideosPage .DataYoutubeVideosList {
+    margin-bottom: 50px;
+}
+
+.URSyoutubeVideosPage .seeAllYoutubeVideos .latestVideos .videoContent {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.URSyoutubeVideosPage .seeAllYoutubeVideos .latestVideos  .video {
+    width: 100%;
+    height: 100%;
+}
+.URSyoutubeVideosPage .seeAllYoutubeVideos .latestVideos h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+}

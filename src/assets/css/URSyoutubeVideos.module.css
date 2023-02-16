@@ -1,0 +1,114 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+
+.URSyoutubeVideos .YoutubeVideos {
+    padding: 100px 0;
+    background-color: #f3f3f3;
+}
+
+.URSyoutubeVideos .YoutubeVideos .latestVideos .videoContent {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.URSyoutubeVideos .YoutubeVideos .latestVideos .video {
+    width: 100%;
+    height: 100%;
+}
+
+.URSyoutubeVideos .YoutubeVideos .latestVideos h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+}
+
+.URSyoutubeVideos .YoutubeVideos .seeAllVideosButton {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.URSyoutubeVideos .YoutubeVideos .seeAllVideosButton .seeAllVideosButtonLink {
+    border: 1px solid #FCBA00;
+    background-color: #FCBA00;
+    width: 100%;
+    padding: 20px 0;
+    color: #fff;
+    transition: All 0.4s;
+    display: block;
+}
+
+.URSyoutubeVideos .YoutubeVideos .seeAllVideosButton .seeAllVideosButtonLink:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.URSyoutubeVideos .YoutubeVideos .titles .titleFiftyPixel {
+    font-size: 50px;
+    font-weight: 800;
+    color: #383838;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+}
+
+.URSyoutubeVideos .YoutubeVideos .titles .titleFiftyPixelLight {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-top: -20px;
+    letter-spacing: -.1px;
+    color: #232323;
+    font-family: poppinsLight;
+    display: inline-block;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+}
+
+@media screen and (max-width: 768px) {
+    .URSyoutubeVideos .YoutubeVideos {
+        padding: 50px 0;
+    }
+
+    .URSyoutubeVideos .YoutubeVideos .titles .titleFiftyPixel {
+        font-size: 30px;
+        line-height: 30px;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .URSyoutubeVideos .YoutubeVideos .titles .titleFiftyPixelLight {
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 5px;
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+
+    .URSyoutubeVideos .YoutubeVideos .latestVideos .ursYoutubeVideo {
+        margin-bottom: 30px;
+    }
+
+    .URSyoutubeVideos .YoutubeVideos .seeAllVideosButton {
+        margin-top: 0 !important;
+    }
+
+    .YoutubeVideos .latestVideos .video {
+        margin-bottom: 80px;
+    }
+
+    .YoutubeVideos .latestVideos .video:last-child {
+        margin-bottom: 0;
+    }
+}

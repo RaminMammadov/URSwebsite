@@ -1,0 +1,17 @@
+.URSscrollBackToTop {
+    background-color: #FCBA00;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    transition: All 0.4s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@media screen and ( max-width: 768px ) {
+    .URSscrollBackToTop {
+        display: none;
+    }
+}

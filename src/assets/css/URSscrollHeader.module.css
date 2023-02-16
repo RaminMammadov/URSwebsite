@@ -1,0 +1,151 @@
+.URSscrollHeader {
+    width: 100% !important;
+    padding: 10px;
+    align-items: center;
+    position: fixed !important;
+    top: 0;
+    z-index: 999999;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.URSscrollHeader .header .logo #logo {
+    width: 100px;
+}
+
+.URSscrollHeader .header .navigation .navigationList {
+    display: flex;
+    justify-content: center;
+}
+
+.URSscrollHeader .header .navigation .navigationList .navigationListItem {position: relative;}
+.URSscrollHeader .header .navigation .navigationList .link {
+    color: #000;
+    margin: 0px 12px;
+    font-size: 17px;
+    position: relative;
+    padding: 20px 0;
+    display: block;
+}
+
+.URSscrollHeader .header .navigation .navigationList .link:hover {
+    color: #FCBA00;
+}
+
+.URSscrollHeader .header .navigation .navigationList .link:hover::before {
+    width: 100%;
+}
+
+.URSscrollHeader .header .navigation .navigationList .link::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #FCBA00;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: All 0.4s;
+}
+
+.URSscrollHeader .header .navigation .navigationList .active {
+    color: #FCBA00;
+    margin: 0px 12px;
+    font-size: 17px;
+    position: relative;
+    padding: 20px 0;
+    display: block;
+}
+
+.URSscrollHeader .header .navigation .navigationList .active::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #FCBA00;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: All 0.4s;
+}
+
+.URSscrollHeader .header .applyButton {
+    text-align: right;
+}
+
+.URSscrollHeader .header .applyButton .applyButtonLink {
+    border: none;
+    background-color: #FCBA00;
+    padding: 15px;
+    transition: All 0.4s;
+    color: #fff;
+    border: 1px solid #FCBA00;
+}
+
+.URSscrollHeader .header .applyButton .applyButtonLink:hover {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.URSscrollHeader .header .navigation .servicesDropdown {
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0%;
+    margin-left: 12px;
+    width: 120%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.URSscrollHeader .header .navigation .servicesDropdown .dropDownItem .dropDownLink {
+    color: #000;
+    display: block;
+    padding: 20px;
+    font-family: poppinsLight;
+    font-size: 15px;
+    margin: 0;
+    font-weight: 800;
+}
+
+.URSscrollHeader .header .navigation .servicesDropdown .dropDownItem .dropDownLink:hover {
+    background-color: #f3f3f3;
+}
+
+.URSscrollHeader .header .navigation .servicesDropdown .dropDownItem .dropDownLink:hover::before {
+    width: 0;
+}
+
+@media only screen and (max-width:992px) {
+    .URSscrollHeader .header .logo #logo {
+        width: 70px;
+    }
+
+    .URSscrollHeader .header .navigation .navigationList .link {
+        margin: 0px 7px;
+        font-size: 14px;
+    }
+    .URSscrollHeader .header .navigation .servicesDropdown {
+        margin-left: 7px;
+    }
+    .URSscrollHeader .header .navigation .navigationList .active {
+        margin: 0px 7px;
+        font-size: 14px;
+    }
+
+    .URSscrollHeader .header .applyButton .applyButtonLink {
+        padding: 9px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .URSscrollHeader {
+        display: none;
+    }
+}
