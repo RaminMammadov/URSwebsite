@@ -17,7 +17,6 @@ export default function HeaderMenu() {
             .catch(error => console.log(error))
     }
     useEffect(() => {
-        getServiceAndEducationData();
         getScoailLinksData();
 
     }, [])
