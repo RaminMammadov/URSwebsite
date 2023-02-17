@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import style from "../assets/css/URSabout.module.css";
 import about from "../assets/images/about.jpg";
 // import { URSdataAbout } from '../Data/URSdataAbout';
+import parse from 'html-react-parser';
 import axios from 'axios';
 
 const URSabout = () => {
@@ -33,7 +34,7 @@ const URSabout = () => {
                                                 return (
                                                     <li key={result._id} className={style.listItem}>
                                                         <div className={style.descriptions}>
-                                                            <p className={style.description}>{result.description}</p>
+                                                            <p className={style.description}>{parse(result.description)}</p>
                                                         </div>
                                                     </li>
                                                 )
