@@ -32,7 +32,7 @@ export default function HeaderMenuMobile() {
     
     const [tools,setTools] = useState([]);
     const getTools = () => {
-        axios.get(`${url}/communication`)
+        axios.get(`${url}/communications`)
         .then(response => {
             setTools(response.data.data)
         })
