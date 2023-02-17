@@ -41,7 +41,11 @@ export default function URSyoutubeVideosPage() {
                 {
                   videos.map((video, index) => {
                     return <div className={`col-md-4 col-12 ${style.DataYoutubeVideosList}`} key={index}>
-                      <div className={style.videoContent}><iframe src={`${video.link}`} title={video.videoTitle} className={style.video} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+                      <div className={style.videoContent}>
+                        <iframe src={video.link} className={style.video} 
+                        title={video.videoTitle}
+                        frameborder="0" allowfullscreen>
+                          </iframe></div>
                       <h3 className={style.videoTitle}>{video.videoTitle}</h3>
                     </div>
                   })
