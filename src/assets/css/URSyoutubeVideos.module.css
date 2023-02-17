@@ -10,14 +10,14 @@
 }
 
 .URSyoutubeVideos .YoutubeVideos .latestVideos .videoContent {
-    width: 100%;
-    height: 200px;
+    width: 100% !important;
+    height: 200px !important;
     margin-bottom: 10px;
 }
 
 .URSyoutubeVideos .YoutubeVideos .latestVideos .video {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .URSyoutubeVideos .YoutubeVideos .latestVideos h3 {

@@ -90,7 +90,11 @@
         text-align: center;
         padding: 20px 10px;
         margin: 0;
+    }
+
+    .URSserviceAndEducationCountriesItem{
         margin-bottom: 24px;
+
     }
 
     .URSserviceAndEducationCountries .URSserviceAndEducationCountriesContent {
