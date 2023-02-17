@@ -36,8 +36,7 @@ const URSyoutubeVideos = () => {
                                         <div className={style.videoContent}>
                                             <iframe src={video.link} className={style.video} 
                                                 title={video.videoTitle}
-                                                allow="accelerometer; autoplay; clipboard-write; 
-                                                encrypted-media; gyroscope; picture-in-picture">
+                                                frameborder="0" allowfullscreen ng-show="showvideo">
                                             </iframe>
                                         </div>
                                         <h3 className={style.videoTitle}>{video.videoTitle}</h3>
