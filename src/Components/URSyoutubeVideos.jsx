@@ -33,7 +33,13 @@ const URSyoutubeVideos = () => {
                                {
                                 videos && videos.map(video => {
                                     return  <div className={`${style.ursYoutubeVideo} col-md-4 col-12`}>
-                                        <div className={style.videoContent}><iframe src={`${video.link}`} className={style.video} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+                                        <div className={style.videoContent}>
+                                            <iframe src={video.link} className={style.video} 
+                                                title={video.videoTitle}
+                                                allow="accelerometer; autoplay; clipboard-write; 
+                                                encrypted-media; gyroscope; picture-in-picture">
+                                            </iframe>
+                                        </div>
                                         <h3 className={style.videoTitle}>{video.videoTitle}</h3>
                                         </div>
                                 })
