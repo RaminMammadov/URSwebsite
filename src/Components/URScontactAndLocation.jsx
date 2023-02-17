@@ -41,7 +41,7 @@ function Contact() {
                             <FaLocationArrow/>
                             </div>
                             <div className={style.blogData}>
-                              <span><a href={item.locationOnMap} target={'_blank'}>{result.adress}</a></span>
+                              <span><a href={result.locationOnMap} target={'_blank'}>{result.adress}</a></span>
                               <span>{result.email}</span> <br />
                               <span>{result.telephone}</span> <br />
                               <span>{result.address}</span>
@@ -55,7 +55,7 @@ function Contact() {
                 <div className="col-lg-7 col-md-12">
                   <div className={style.URScontactMarginThirteenPixel}>
                     <div className={style.URScontactMapLocation}>
-                      <iframe className={style.map} src={item.locationOnMap}></iframe>
+                      <iframe className={style.map} src={result.locationOnMap}></iframe>
                     </div>
                   </div>
                 </div>
