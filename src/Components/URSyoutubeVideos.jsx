@@ -32,7 +32,7 @@ const URSyoutubeVideos = () => {
                         <div className={style.latestVideos}>
                             <div className="row">
                                {
-                                videos && videos.map((video,index) => {
+                                videos && videos.reverse().map((video,index) => {
                                     if (index <= 2) {
                                         return  <div className={`${style.ursYoutubeVideo} col-md-4 col-12`}>
                                         <div className={style.videoContent}>
