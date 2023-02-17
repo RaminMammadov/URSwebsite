@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import URSmobileHeader from "../Components/URSmobileHeader";
 import URSscrollHeader from "../Components/URSscrollHeader";
 import ApplyForm from '../Components/URSapplyForm';
@@ -8,21 +8,23 @@ import style from '../assets/css/URSyoutubeVideosPage.module.css';
 // import DataYoutubeVideos from '../Data/URSdataYoutubeVideos.json';
 import URSfooter from '../Components/URSfooter';
 import axios from "axios";
+import ReactPlayer from 'react-player/youtube';
+
 
 
 export default function URSyoutubeVideosPage() {
   window.scrollTo(0, 0);
   const url = 'https://api.ursdanismanlik.com/v1';
 
-  const [videos,setVideos] = useState([]);
+  const [videos, setVideos] = useState([]);
   const getVideos = () => {
-      axios.get(`${url}/videos`)
+    axios.get(`${url}/videos`)
       .then(response => setVideos(response.data.data))
       .catch(error => console.log(error))
-  }       
+  }
   useEffect(() => {
-      getVideos();
-  },[])
+    getVideos();
+  }, [])
 
   return (
     <div className={style.URSyoutubeVideosPage}>
@@ -42,10 +44,9 @@ export default function URSyoutubeVideosPage() {
                   videos.map((video, index) => {
                     return <div className={`col-md-4 col-12 ${style.DataYoutubeVideosList}`} key={index}>
                       <div className={style.videoContent}>
-                        <iframe src={video.link} className={style.video} 
-                        title={video.videoTitle}
-                        frameborder="0" allowfullscreen>
-                          </iframe></div>
+                        <ReactPlayer className={style.video}
+                          url={video.link} />
+                      </div>
                       <h3 className={style.videoTitle}>{video.videoTitle}</h3>
                     </div>
                   })
