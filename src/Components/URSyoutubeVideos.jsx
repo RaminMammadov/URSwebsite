@@ -36,7 +36,7 @@ const URSyoutubeVideos = () => {
                                         <div className={style.videoContent}>
                                             <iframe src={video.link} className={style.video} 
                                                 title={video.videoTitle}
-                                                frameborder="0" allowfullscreen ng-show="showvideo">
+                                                frameborder="0" allowfullscreen>
                                             </iframe>
                                         </div>
                                         <h3 className={style.videoTitle}>{video.videoTitle}</h3>
