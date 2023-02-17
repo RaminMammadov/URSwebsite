@@ -32,10 +32,10 @@ function URSmentors() {
                     <div className={style.URSmentorsCard}>
                       <div className={style.URSmentorsCardInner}>
                         <div className={style.URSmentorsCardFront}>
-                          <img className={style.image} src={`https://api.ursdanismanlik.com/uploads/${result.picture}`} alt="" />
+                          <img className={style.image} src={`https://api.ursdanismanlik.com/uploads/${result.picture}`} alt="Mentor" />
                         </div>
                         <div className={`${style.URSmentorsCardBack} ${result.class}`}>
-                          <img className={style.URSmentorsImage} src={`${url}uploads/${result.picture}`} alt="" />
+                          <img className={style.URSmentorsImage} src={`https://api.ursdanismanlik.com/uploads/${result.picture}`} alt="Mentor" />
                           <div className={style.URSmentorsTurnCard}>
                             <h4 className={style.name}>{result.name}<br />{result.surName}</h4>
                             <p className={style.profession}>
