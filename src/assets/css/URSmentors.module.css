@@ -89,7 +89,7 @@
     color: #fff;
 }
 .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard .name {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -139,14 +139,14 @@
     }
 
    
-
+/* 
     .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner {
         transform: rotateX(180deg);
 
-    }
-    .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard {
+    } */
+    /* .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard {
         background-color: transparent !important;
-    }
+    } */
     .URSmentors .URSmentorsColDirection .URSmentorsCard .URSmentorsCardInner .URSmentorsCardBack .URSmentorsTurnCard .name {
         font-size: 15px;
         text-align: center;
