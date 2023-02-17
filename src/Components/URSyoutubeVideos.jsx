@@ -11,7 +11,7 @@ const URSyoutubeVideos = () => {
     const getVideos = () => {
         axios.get(`${url}/videos`)
         .then(response => setVideos(response.data.data))
-        .catch(error => console.log(error))
+        .catch(error => null)
     }       
     useEffect(() => {
         getVideos();
