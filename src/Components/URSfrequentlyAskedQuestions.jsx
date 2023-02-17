@@ -54,12 +54,16 @@ export default function Faq() {
                             <div className={style.frequentlyAskedQuestionsAccordion}>
                                 {
 
-                                    FaqQuestions.map(item => {
-                                        return <div key={item._id}><div className={style.questions} onClick={showAnswer} data-key={item._id} >
+                                    FaqQuestions.map((item,key) => {
+                                        if (key <= 4) {
+                                            return <div key={item._id}><div className={style.questions} onClick={showAnswer} data-key={item._id} >
                                             <div className={style.question} data-key={item._id}>{item.question}</div>
                                             <div className={style.questionArrowIcon}>{arrowIcon ? dataKey == item._id ? <FaArrowUp data-key={item._id} /> : <FaArrowDown data-key={item._id} /> : <FaArrowDown data-key={item._id} />}</div>
                                         </div>
                                             {isSowAnswer ? dataKey == item._id ? <div className={style.answers}> <div className={style.answer}>{item.answer}</div> </div> : null : null}</div>
+                                        }else {
+                                            return null
+                                        }
                                     })
                                 }
 
