@@ -35,15 +35,10 @@ function Contact() {
                       <div className={style.getInTouchBlog}>
                         <ul className={style.getInTouchBlogAbout}>
                           <li className={style.blogList} key={result._id}>
-                            <div className={`${style.blogIcon} ${result.class}`}>
-                              <span><FaEnvelopeOpen /></span>
-                              <span><FaPhone /></span> <br />
-                              <span><FaLocationArrow /></span> <br />
-                            </div>
                             <div className={style.blogData}>
-                              <span>{result.email}</span> <br />
-                              <span>{result.telephone}</span> <br />
-                              <span>{result.address}</span>
+                              <span><FaEnvelopeOpen /> {result.email}</span> <br />
+                              <span><FaPhone /> {result.telephone}</span> <br />
+                              <span><FaLocationArrow /> {result.address}</span>
                             </div>
                           </li>
                         </ul>
