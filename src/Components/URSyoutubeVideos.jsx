@@ -31,8 +31,9 @@ const URSyoutubeVideos = () => {
                         <div className={style.latestVideos}>
                             <div className="row">
                                {
-                                videos && videos.map(video => {
-                                    return  <div className={`${style.ursYoutubeVideo} col-md-4 col-12`}>
+                                videos && videos.map((video,index) => {
+                                    if (index <= 2) {
+                                        return  <div className={`${style.ursYoutubeVideo} col-md-4 col-12`}>
                                         <div className={style.videoContent}>
                                             <iframe src={video.link} className={style.video} 
                                                 title={video.videoTitle}
@@ -41,6 +42,9 @@ const URSyoutubeVideos = () => {
                                         </div>
                                         <h3 className={style.videoTitle}>{video.videoTitle}</h3>
                                         </div>
+                                    }else {
+                                        return null
+                                    }
                                 })
                                }
 
