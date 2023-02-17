@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import style from "../assets/css/URScontactAndLocation.module.css";
 import axios from "axios";
-import {FaLocationArrow, FaEnvelopeOpen, FaPhone} from "react-icons/fa";
+import { FaLocationArrow, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
 
 
 function Contact() {
   const url = 'https://api.ursdanismanlik.com/v1';
-  
+
   const [data, setData] = useState([]);
 
   const getData = () => {
@@ -36,12 +36,11 @@ function Contact() {
                         <ul className={style.getInTouchBlogAbout}>
                           <li className={style.blogList} key={result._id}>
                             <div className={`${style.blogIcon} ${result.class}`}>
-                            <FaEnvelopeOpen/>
-                            <FaPhone/>
-                            <FaLocationArrow/>
+                              <span><FaEnvelopeOpen /></span>
+                              <span><FaPhone /></span> <br />
+                              <span><FaLocationArrow /></span> <br />
                             </div>
                             <div className={style.blogData}>
-                              <span><a href={result.locationOnMap} target={'_blank'}>{result.adress}</a></span>
                               <span>{result.email}</span> <br />
                               <span>{result.telephone}</span> <br />
                               <span>{result.address}</span>
