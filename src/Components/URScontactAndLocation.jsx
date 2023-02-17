@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import style from "../assets/css/URScontactAndLocation.module.css";
 import axios from "axios";
-import { branchAzerbaijan } from '../Data/URSdataContact'
+import {FaLocationArrow, FaEnvelopeOpen, FaPhone} from "react-icons/fa";
+
 
 function Contact() {
   const url = 'https://api.ursdanismanlik.com/v1';
