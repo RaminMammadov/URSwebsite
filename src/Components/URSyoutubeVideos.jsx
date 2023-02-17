@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import style from '../assets/css/URSyoutubeVideos.module.css';
 import { NavLink } from 'react-router-dom';
 import axios from 'axios';
+import ReactPlayer from 'react-player/youtube';
 
 const URSyoutubeVideos = () => {
     const url = 'https://api.ursdanismanlik.com/v1';
@@ -35,10 +36,8 @@ const URSyoutubeVideos = () => {
                                     if (index <= 2) {
                                         return  <div className={`${style.ursYoutubeVideo} col-md-4 col-12`}>
                                         <div className={style.videoContent}>
-                                            <iframe src={video.link} className={style.video} 
-                                                title={video.videoTitle}
-                                                frameborder="0" allowfullscreen>
-                                            </iframe>
+                                        <ReactPlayer className={style.video} 
+                                        url={video.link} />
                                         </div>
                                         <h3 className={style.videoTitle}>{video.videoTitle}</h3>
                                         </div>
