@@ -41,7 +41,7 @@ export default function URSyoutubeVideosPage() {
             <div className={style.latestVideos}>
               <div className="row">
                 {
-                  videos.map((video, index) => {
+                  videos.reverse().map((video, index) => {
                     return <div className={`col-md-4 col-12 ${style.DataYoutubeVideosList}`} key={index}>
                       <div className={style.videoContent}>
                         <ReactPlayer className={style.video}
