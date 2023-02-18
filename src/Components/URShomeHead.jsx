@@ -5,7 +5,6 @@ import Pages from '../Routing/Pages.json';
 import { Link, NavLink } from 'react-router-dom';
 // import banner from '../assets/images/mainbanner.png';
 import banner from '../assets/images/aa.png';
-mainbanner.c440aeb0d866ccefd6c4
 import mobilebanner from '../assets/images/mobilemainbanner.png';
 import axios from 'axios';
 
