@@ -8,6 +8,8 @@ import URSscrollHeader from './URSscrollHeader';
 import BreadcumpStyle from '../assets/css/Breadcump.module.css';
 import URSmobileHeader from '../Components/URSmobileHeader';
 import URSfooter from '../Components/URSfooter';
+import parse from 'html-react-parser';
+
 import axios from 'axios';
 
 export default function URSportfolioDetail() {
@@ -61,7 +63,7 @@ export default function URSportfolioDetail() {
                                                     <h2 className={style.title}>{item.marka}</h2>
                                                     <h2 className={style.titleServiceName}>{item.serviceName}</h2>
                                                     <p className={style.description}>
-                                                        {item.description}
+                                                        {parse(item.description)}
                                                     </p>
                                                 </div>
                                             </div>
