@@ -1,4 +1,4 @@
-import React, { useState,useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import style from '../assets/css/URSmobileHeader.module.css';
 import Logo from '../assets/images/11.svg';
 import { FaWhatsapp, FaPhone, FaBars, FaStaylinked } from 'react-icons/fa';
@@ -7,7 +7,7 @@ import { Link, NavLink } from 'react-router-dom';
 import axios from 'axios';
 
 export default function HeaderMenuMobile() {
-  const url = 'https://api.ursdanismanlik.com/v1';
+    const url = 'https://api.ursdanismanlik.com/v1';
 
     const [showMenu, setShowMenu] = useState(false);
     const setMenu = useCallback(() => {
@@ -21,28 +21,39 @@ export default function HeaderMenuMobile() {
     }
 
 
-    const [socialMediaLinks,setSocialMediaLinks] = useState([]);
+    const [socialMediaLinks, setSocialMediaLinks] = useState([]);
     const getScoailLinksData = () => {
-      axios.get(`${url}/socials`)
-      .then(response => {
-        setSocialMediaLinks(response.data.data)
-      })
-      .catch(error => console.log(error))
+        axios.get(`${url}/socials`)
+            .then(response => {
+                setSocialMediaLinks(response.data.data)
+            })
+            .catch(error => console.log(error))
     }
-    
-    const [tools,setTools] = useState([]);
+
+    const [tools, setTools] = useState([]);
     const getTools = () => {
         axios.get(`${url}/communications`)
-        .then(response => {
-            setTools(response.data.data)
-        })
-        .catch(error => console.log(error))
-      }
+            .then(response => {
+                setTools(response.data.data)
+            })
+            .catch(error => console.log(error))
+    }
     useEffect(() => {
-      getScoailLinksData();
-      getTools();
-      
+        getScoailLinksData();
+        getTools();
+
     }, [])
+
+    const [dataServiceAndEDucation,setDataServiceAndEDucation] = useState([]);
+    const getServiceAndEducationData = () => {
+      axios
+        .get(`${url}/services`)
+        .then(response => setDataServiceAndEDucation(response.data.data))
+        .catch(error => console.log(error));
+    };
+    useEffect(() => {
+      getServiceAndEducationData();
+    },[])
 
     return (
         <div className={style.URSmobileHeader}>
@@ -62,7 +73,7 @@ export default function HeaderMenuMobile() {
                                 return <a href={`tel:${data.telephone}`}><FaPhone /></a>
                             })
                         }
-                
+
                         <FaBars className={style.bars} onClick={setMenu} />
                     </div>
 
@@ -79,18 +90,11 @@ export default function HeaderMenuMobile() {
                             <a className={style.link} href="#" onClick={dropMenuToogle}>Hizmet & Eğitim</a>
                             {
                                 showDropMenu ? <ul className={style.servicesDropdown}>
-                                    <li className={style.dropDownItem}>
-                                        <Link onClick={setMenu} className={style.dropDownLink} to="/URSserviceAndEducationDetail/:Online%20Arbitrage">Online Arbitrage</Link>
-                                    </li>
-                                    <li className={style.dropDownItem}>
-                                        <Link onClick={setMenu} className={style.dropDownLink} to="/URSserviceAndEducationDetail/:Retail%20Arbitrage">Retail Arbitrage</Link>
-                                    </li>
-                                    <li className={style.dropDownItem}>
-                                        <Link onClick={setMenu} className={style.dropDownLink} to="/URSserviceAndEducationDetail/:Private%20Label">Private Label</Link>
-                                    </li>
-                                    <li className={style.dropDownItem}>
-                                        <Link onClick={setMenu} className={style.dropDownLink} to="/URSserviceAndEducationDetail/:Teknik%20Servis">Teknik Destek</Link>
-                                    </li>
+                                    {
+                                        dataServiceAndEDucation.map(data => {
+                                            return <li className={style.dropDownItem}><NavLink to={`/URSserviceAndEducationDetail/:${data.title}`} className={style.dropDownLink}>{data.title}</NavLink></li>
+                                        })
+                                    }
                                 </ul> : null
                             }
 
