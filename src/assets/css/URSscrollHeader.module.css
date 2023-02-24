@@ -55,7 +55,6 @@
     color: #FCBA00;
     margin: 0px 12px;
     font-size: 17px;
-    position: relative;
     padding: 20px 0;
     display: block;
 }
@@ -99,7 +98,7 @@
     flex-direction: column;
     left: 0%;
     margin-left: 12px;
-    width: 120%;
+    width: 130%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
