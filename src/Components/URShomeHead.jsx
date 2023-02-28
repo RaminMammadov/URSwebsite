@@ -4,8 +4,7 @@ import Logo from '../assets/images/12.svg';
 import Pages from '../Routing/Pages.json';
 import { Link, NavLink } from 'react-router-dom';
 import banner from '../assets/images/ursbanner.svg';
-// import banner from '../assets/images/mainbanner.png';
-
+//mainbanner.png
 import mobilebanner from '../assets/images/mobilemainbanner.png';
 import axios from 'axios';
 
